@@ -39,12 +39,11 @@ export default defineConfig({
           },
         },
       },
-      // TODO(Phase 1): point at the real Gears source repository.
       social: [
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/gears-rs/gears',
+          href: 'https://github.com/constructorfabric/gears-rust',
         },
       ],
       // Sidebar skeleton — the nine top-level sections from the IA.
