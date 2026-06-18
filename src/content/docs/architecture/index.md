@@ -23,7 +23,7 @@ registration point; dependency ordering is a platform guarantee.
 The runtime (`HostRuntime`) discovers every gear, builds a dependency-ordered registry, and
 drives all gears through one shared sequence of phases:
 
-```
+```text
 pre_init → DB migration → init → post_init → REST wiring → gRPC wiring → start → stop
 ```
 
@@ -46,7 +46,7 @@ A gear opts into work in each phase by declaring **capabilities** (`db`, `rest`,
 
 A request flows through clearly separated responsibilities:
 
-```
+```text
 Client
   → API Gateway        validates the token → SecurityContext; checks license
   → Gear handler       calls PolicyEnforcer (PEP)

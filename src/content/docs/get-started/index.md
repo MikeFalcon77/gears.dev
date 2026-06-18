@@ -43,7 +43,7 @@ curl -s http://127.0.0.1:8087/health
 
 Open the interactive API docs in a browser:
 
-```
+```text
 http://127.0.0.1:8087/cf/docs
 ```
 

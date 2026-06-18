@@ -27,7 +27,12 @@ pnpm dev          # start the dev server at http://localhost:4321
 pnpm build        # build the static site into ./dist
 pnpm preview      # preview the production build locally
 pnpm check        # type-check content and components (astro check)
+pnpm lint:md      # lint Markdown content (markdownlint)
+pnpm links        # check internal links in ./dist (run after build)
 ```
+
+These checks also run in CI on every push and pull request
+(`.github/workflows/ci.yml`): install → `check` → `lint:md` → `build` → `links`.
 
 ## Project structure
 

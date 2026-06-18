@@ -13,7 +13,7 @@ material in [Architecture](/architecture/).
 
 Gears are organized into exactly three tiers, with a one-way dependency direction:
 
-```
+```text
 Service gears   (gears/)          business capabilities
       │  depend on
       ▼
